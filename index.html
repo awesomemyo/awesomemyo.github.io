@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="shortcut icon" href="#">
+    <link href="./assets/css/styles.css" rel="stylesheet" type="text/css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="./assets/js/web3.min.js"></script>
+    <script src="./abi.js"></script>
+    <script src="./index.js"></script>
+</head>
+<body>
+    <div class="wiki">
+        <header>
+          <h1>Token Wiki</h1>
+        </header>
+        <hr>
+          <main>
+            <section>
+              <h2>Generic Info</h2>
+              <article class="generic">
+                <p class="item">Token Name</p><p id="tokenName" class="value"></p>
+              </article>
+              <article class="generic">
+                <p class="item">Token Symbol</p><p id="tokenSymbol" class="value"></p>
+              </article>
+              <article class="generic">
+                <p class="item">Circulating Supply</p><p id="circulatingSupply" class="value"></p>
+              </article>
+              <article class="generic">
+                <p class="item">Minimum Supply</p><p id="minimumSupply" class="value"></p>
+              </article>
+              <article class="generic">
+                <p class="item">Maximum Supply</p><p id="maximumSupply" class="value"></p>
+              </article>
+            </section>
+            <section>
+              <h2>My Account</h2>
+              <article class="account">
+                <p class="item">Account Address</p><p id="accountAddress" class="value"></p>
+              </article>
+              <article class="account">
+                  <p class="item">Account Balance</p><p id="accountBalance" class="value"></p>
+                </article>
+            </section>
+            <section>
+              <h2>Minting</h2>
+                <p class="item">Mint To Address : </p><input type="text" id="mintAddress" size="48"/>
+                <br>
+                <p class="item">Mint Amount : </p><input type="number" id="mintAmount" min="1" max="1000000"/>
+                <br><br>
+                <div class="txnMessage" id="message"></div>
+                <br>
+                <button onclick="mintToken()">Mint</button>
+            </section>
+          </main>
+      </div>
+</body>
+</html>

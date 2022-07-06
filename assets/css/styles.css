@@ -1,0 +1,50 @@
+body {
+    background-color: burlywood;
+    margin-left: 25px;
+  }
+
+  section{
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  
+  h1 {
+    font-size: 40px;
+    margin-top: 0;
+    margin-bottom: 15px;
+  }
+  
+  h2 {
+    font-size: 30px;
+  }
+  
+  hr {
+    height: 2px;
+    background-color: brown;
+    border-color: brown;
+  }
+  
+  p {
+    display: inline-block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 18px;
+  }
+
+  button{
+    margin-left:15px;
+  }
+  
+  .item, .input {
+    text-align: left;
+    width: 15%;
+  }
+  
+  .value {
+    text-align: right;
+  }
+
+  .txnMessage{
+    color: green;
+    font-weight: bold;
+  }
